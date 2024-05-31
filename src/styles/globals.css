@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --default: #111;
+  --primary: #0059c6;
+  --gray: #666;
+  --lightgray: #F2F2F2;
+  --lightgray2: #ddd;
+  --blue-hover: #2886D8;
+  --bluelight: #3083F4;
+  --filter-primary: invert(20%) sepia(89%) saturate(2638%) hue-rotate(207deg) brightness(91%) contrast(103%);
+  --filter-white: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+  --filter-svg-hover: invert(52%) sepia(99%) saturate(1101%) hue-rotate(188deg) brightness(110%) contrast(91%);
+  --font-default: 'Charis SIL', sans-serif;
+  --font-Guru: 'PT Sans', sans-serif;
+  --font-article: 'Charis SIL', sans-serif;
+  --font-quicklink: 'Sora', sans-serif;
+  --font-Arial: 'Arial', sans-serif;
+  --txt-header: 22px;
+  --txt-header2: 18px;
+  --txt-detail: 18px;
+  --txt-header-highlight: 30px;
+}
