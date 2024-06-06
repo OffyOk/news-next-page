@@ -11,16 +11,19 @@ import { Badge } from "@mui/material";
 // props = {post}
 // post = props.post
 // {post} = props
-export default function NewsCard({ post }: { post: Post }) {
+interface PropsNewsCard {
+  post: Post;
+}
+export default function NewsCard({ post }: PropsNewsCard) {
   return (
-    <Card sx={{ minHeight: "280px", width: 320 }}>
+    <Card sx={{ minHeight: "280px", width: 350 }}>
       <CardCover>
         {post.urlToImage && (
           <Image
             src={post.urlToImage}
             // srcSet="https://images.unsplash.com/photo-1542773998-9325f0a098d7?auto=format&fit=crop&w=320&dpr=2 2x"
             loading="lazy"
-            width={320}
+            width={350}
             height={180}
             alt={`this image about ${post.title}`}
           />

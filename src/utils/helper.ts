@@ -5,6 +5,11 @@
 //   userId: number;
 //   image?: string;
 // }
+export interface News {
+  status: string;
+  totalResults: number;
+  articles: Post[];
+}
 
 export interface Post {
   source: Source;
@@ -13,7 +18,7 @@ export interface Post {
   description: string;
   url: string;
   urlToImage: string;
-  publishedAt: string; //"2024-05-20T13:20:00Z",
+  publishedAt: any; //"2024-05-20T13:20:00Z",
   content: string;
 }
 

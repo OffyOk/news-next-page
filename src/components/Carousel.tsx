@@ -10,75 +10,76 @@ import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
 import { Post } from "@/utils/helper";
 import Image from "next/image";
+import { cnnNews } from "@/constant/cnn";
 
 const AutoPlaySwipeableViews: any = autoPlay(SwipeableViews);
-
-const posts: Post[] = [
-  {
-    source: {
-      id: 1,
-      name: "Gizmodo.com",
-    },
-    author: "Vinamrata Chaturvedi, Quartz",
-    title: "Everything to Know About Bitcoin Pizza Day",
-    description:
-      "On May 22, 2010, a man in Florida paid 10,000 Bitcoin for pizza.Read more...",
-    url: "https://gizmodo.com/bitcoin-pizza-day-date-origin-history-cryptocurrency-1851487831",
-    urlToImage:
-      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250",
-    publishedAt: "2024-05-20T13:20:00Z",
-    content:
-      "On January 3, 2009, Bitcoins creator, Satoshi Nakamoto, mined the first block of the Bitcoin blockchain, known as the Genesis Block, which contained a reward of 50 Bitcoin. The technical foundations … [+1156 chars]",
-  },
-  {
-    source: {
-      id: 2,
-      name: "Gizmodo2.com",
-    },
-    author: "22Vinamrata Chaturvedi, Quartz",
-    title: "22Everything to Know About Bitcoin Pizza Day",
-    description:
-      "22On May 22, 2010, a man in Florida paid 10,000 Bitcoin for pizza.Read more...",
-    url: "https://gizmodo.com/bitcoin-pizza-day-date-origin-history-cryptocurrency-1851487831",
-    urlToImage:
-      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250",
-    publishedAt: "2024-05-20T13:20:00Z",
-    content:
-      "22On January 3, 2009, Bitcoins creator, Satoshi Nakamoto, mined the first block of the Bitcoin blockchain, known as the Genesis Block, which contained a reward of 50 Bitcoin. The technical foundations … [+1156 chars]",
-  },
-  {
-    source: {
-      id: 3,
-      name: "Gizmodo3.com",
-    },
-    author: "33Vinamrata Chaturvedi, Quartz",
-    title: "33Everything to Know About Bitcoin Pizza Day",
-    description:
-      "33On May 22, 2010, a man in Florida paid 10,000 Bitcoin for pizza.Read more...",
-    url: "https://gizmodo.com/bitcoin-pizza-day-date-origin-history-cryptocurrency-1851487831",
-    urlToImage:
-      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250",
-    publishedAt: "2024-05-20T13:20:00Z",
-    content:
-      "33On January 3, 2009, Bitcoins creator, Satoshi Nakamoto, mined the first block of the Bitcoin blockchain, known as the Genesis Block, which contained a reward of 50 Bitcoin. The technical foundations … [+1156 chars]",
-  },
-  {
-    source: {
-      id: 4,
-      name: "Gizmodo4.com",
-    },
-    author: "44Vinamrata Chaturvedi, Quartz",
-    title: "44Everything to Know About Bitcoin Pizza Day",
-    description:
-      "44On May 22, 2010, a man in Florida paid 10,000 Bitcoin for pizza.Read more...",
-    url: "https://gizmodo.com/bitcoin-pizza-day-date-origin-history-cryptocurrency-1851487831",
-    urlToImage:
-      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250",
-    publishedAt: "2024-05-20T13:20:00Z",
-    content:
-      "44On January 3, 2009, Bitcoins creator, Satoshi Nakamoto, mined the first block of the Bitcoin blockchain, known as the Genesis Block, which contained a reward of 50 Bitcoin. The technical foundations … [+1156 chars]",
-  },
-];
+const posts: Post[] = cnnNews.articles;
+// const posts: Post[] = [
+//   {
+//     source: {
+//       id: 1,
+//       name: "Gizmodo.com",
+//     },
+//     author: "Vinamrata Chaturvedi, Quartz",
+//     title: "Everything to Know About Bitcoin Pizza Day",
+//     description:
+//       "On May 22, 2010, a man in Florida paid 10,000 Bitcoin for pizza.Read more...",
+//     url: "https://gizmodo.com/bitcoin-pizza-day-date-origin-history-cryptocurrency-1851487831",
+//     urlToImage:
+//       "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250",
+//     publishedAt: "2024-05-20T13:20:00Z",
+//     content:
+//       "On January 3, 2009, Bitcoins creator, Satoshi Nakamoto, mined the first block of the Bitcoin blockchain, known as the Genesis Block, which contained a reward of 50 Bitcoin. The technical foundations … [+1156 chars]",
+//   },
+//   {
+//     source: {
+//       id: 2,
+//       name: "Gizmodo2.com",
+//     },
+//     author: "22Vinamrata Chaturvedi, Quartz",
+//     title: "22Everything to Know About Bitcoin Pizza Day",
+//     description:
+//       "22On May 22, 2010, a man in Florida paid 10,000 Bitcoin for pizza.Read more...",
+//     url: "https://gizmodo.com/bitcoin-pizza-day-date-origin-history-cryptocurrency-1851487831",
+//     urlToImage:
+//       "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250",
+//     publishedAt: "2024-05-20T13:20:00Z",
+//     content:
+//       "22On January 3, 2009, Bitcoins creator, Satoshi Nakamoto, mined the first block of the Bitcoin blockchain, known as the Genesis Block, which contained a reward of 50 Bitcoin. The technical foundations … [+1156 chars]",
+//   },
+//   {
+//     source: {
+//       id: 3,
+//       name: "Gizmodo3.com",
+//     },
+//     author: "33Vinamrata Chaturvedi, Quartz",
+//     title: "33Everything to Know About Bitcoin Pizza Day",
+//     description:
+//       "33On May 22, 2010, a man in Florida paid 10,000 Bitcoin for pizza.Read more...",
+//     url: "https://gizmodo.com/bitcoin-pizza-day-date-origin-history-cryptocurrency-1851487831",
+//     urlToImage:
+//       "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250",
+//     publishedAt: "2024-05-20T13:20:00Z",
+//     content:
+//       "33On January 3, 2009, Bitcoins creator, Satoshi Nakamoto, mined the first block of the Bitcoin blockchain, known as the Genesis Block, which contained a reward of 50 Bitcoin. The technical foundations … [+1156 chars]",
+//   },
+//   {
+//     source: {
+//       id: 4,
+//       name: "Gizmodo4.com",
+//     },
+//     author: "44Vinamrata Chaturvedi, Quartz",
+//     title: "44Everything to Know About Bitcoin Pizza Day",
+//     description:
+//       "44On May 22, 2010, a man in Florida paid 10,000 Bitcoin for pizza.Read more...",
+//     url: "https://gizmodo.com/bitcoin-pizza-day-date-origin-history-cryptocurrency-1851487831",
+//     urlToImage:
+//       "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250",
+//     publishedAt: "2024-05-20T13:20:00Z",
+//     content:
+//       "44On January 3, 2009, Bitcoins creator, Satoshi Nakamoto, mined the first block of the Bitcoin blockchain, known as the Genesis Block, which contained a reward of 50 Bitcoin. The technical foundations … [+1156 chars]",
+//   },
+// ];
 
 function CarouselStepper() {
   const theme = useTheme();
